@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Return</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Return Form</h2>
+  <form>
+    <label>Return ID (PK):</label>
+    <input type="text" name="return_id" required />
+
+    <label>Borrow ID:</label>
+    <input type="text" name="borrow_id" required />
+
+    <label>Return Date:</label>
+    <input type="date" name="return_date" required />
+
+    <label>Fine Amount:</label>
+    <input type="number" name="fine_amount" required />
+
+    <label>Remarks:</label>
+    <textarea name="remarks" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="form-handler.js"></script>
+</body>
+</html>
+

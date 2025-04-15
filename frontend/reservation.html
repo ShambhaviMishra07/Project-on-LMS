@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reservation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Reservation Form</h2>
+  <form>
+    <label>Reservation ID:</label>
+    <input type="text" name="reservation_id" required />
+
+    <label>User ID:</label>
+    <input type="text" name="user_id" required />
+
+    <label>Book ID:</label>
+    <input type="text" name="book_id" required />
+
+    <label>Reservation Date:</label>
+    <input type="date" name="reservation_date" required />
+
+    <label>Status:</label>
+    <select name="status" required>
+      <option value="">Select Status</option>
+      <option value="pending">Pending</option>
+      <option value="fulfilled">Fulfilled</option>
+      <option value="cancelled">Cancelled</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="form-handler.js"></script>
+</body>
+</html>

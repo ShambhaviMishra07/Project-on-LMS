@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Book Form</h2>
+  <form>
+    <label>Book ID (PK):</label>
+    <input type="text" name="book_id" required />
+
+    <label>Title:</label>
+    <input type="text" name="title" required />
+
+    <label>ISBN:</label>
+    <input type="text" name="isbn" required />
+
+    <label>Publisher:</label>
+    <input type="text" name="publisher" required />
+
+    <label>Publication Year:</label>
+    <input type="number" name="publication_year" required />
+
+    <label>Genre:</label>
+    <input type="text" name="genre" required />
+
+    <label>Copies Available:</label>
+    <input type="number" name="copies_available" required />
+
+    <label>Author ID:</label>
+    <input type="text" name="author_id" required />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="form-handler.js"></script>
+</body>
+</html>

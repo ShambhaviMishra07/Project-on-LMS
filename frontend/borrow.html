@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Borrow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Borrow Form</h2>
+  <form>
+    <label>Borrow ID:</label>
+    <input type="text" name="borrow_id" required />
+
+    <label>User ID:</label>
+    <input type="text" name="user_id" required />
+
+    <label>Book ID:</label>
+    <input type="text" name="book_id" required />
+
+    <label>Borrow Date:</label>
+    <input type="date" name="borrow_date" required />
+
+    <label>Return Date:</label>
+    <input type="date" name="return_date" required />
+
+    <label>Status:</label>
+    <select name="status" required>
+      <option value="">Select Status</option>
+      <option value="borrowed">Borrowed</option>
+      <option value="returned">Returned</option>
+      <option value="overdue">Overdue</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="form-handler.js"></script>
+</body>
+</html>
+
