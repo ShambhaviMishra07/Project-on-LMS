@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Management System</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Library Management System</h1>
+  <h1>Library Management System</h1>
 
-    <div id="books-list">
-        <!-- List of books will appear here -->
-    </div>
+  <div id="nav-buttons">
+    <button  onclick="navigateTo('login.html')">Login</button>
+    <button onclick="navigateTo('user.html')">User</button>
+    <button onclick="navigateTo('book.html')">Book</button>
+    <button onclick="navigateTo('borrow.html')">Borrow</button>
+    <button onclick="navigateTo('reservation.html')">Reservation</button>
+    <button onclick="navigateTo('return.html')">Return</button>
+  </div>
 
-    <script src="script.js"></script>
+  <div id="books-list">
+    <!-- List of books will appear here -->
+  </div>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
